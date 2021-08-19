@@ -78,12 +78,12 @@ void s3() {
 
 void egenS3() {
   for (Ball b : allBalls) {
-    PVector gravity = new PVector(0, 0.1 * b.mass);
-    float c = 0.01;
+    PVector gravity = new PVector(0, 9.82);
+    float c = 1;
     PVector friction = b.velocity.get();
     friction.mult(-1);
     friction.normalize();
-    friction.mult(c);
+    friction.mult(c*(b.mass/10));
     
     b.applyForce(friction);
     b.applyForce(gravity);
