@@ -28,7 +28,7 @@ public class BinarySearch {
             arrayHalf = (leftRange + rightRange) / 2; // Udregner den midtte
 
             // Er minimum og maksimum begge 0?
-            if (leftRange == 0 && rightRange == 0) {
+            if (leftRange == 0 && rightRange == 0 || leftRange == array.length - 2 && rightRange == array.length - 1) {
                 // Når "endlessLoop" er 5 betyder det at vi har kigget arrayen igennem og tallet er ikke blevet fundet
                 // "endlessLoop" behøver ikke at være 5, kan sagtens være 1.
                 endlessLoop++;
