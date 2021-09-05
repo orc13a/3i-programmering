@@ -13,10 +13,10 @@ Er værdien større byt, dermed sammenlign igen mod venstre og hvis værdien er 
 ### Loop
 Trinene køres i et loop.
 ---
-
 Insertion sort virker altså på den møde at man tager en plads i arrayen og sammenligner med pladsen en gang til venstre.
 Hvis der byttes sammenligner man igen en plads mod venstre. Der sammenlignes indtil at værdien er større og at man når starten af arrayen.
 ---
+
 ### Eksemple
 En array kunne se sådan ud her: `[5, 2, 4, 6, 3, 1]`.
 Vi starter med at tage plads to som har værdien 2.
