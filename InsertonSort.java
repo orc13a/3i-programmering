@@ -1,17 +1,17 @@
 public class InsertonSort {
     public static void main(String[] args) {
         // https://www.random.org/integer-sets/
-        int[] talArr = {14, 18, 21, 33, 3, 38, 16, 34, 8, 19, 4, 29, 2, 15, 10, 24, 11, 31, 25, 6, 30, 41, 49, 13, 40, 36, 27, 44, 42, 17, 22, 47, 5, 48, 50, 45, 23, 39, 26, 7, 46, 1, 9, 37, 28, 20, 43, 35, 32, 12};
+        // int[] talArr = {14, 18, 21, 33, 3, 38, 16, 34, 8, 19, 4, 29, 2, 15, 10, 24, 11, 31, 25, 6, 30, 41, 49, 13, 40, 36, 27, 44, 42, 17, 22, 47, 5, 48, 50, 45, 23, 39, 26, 7, 46, 1, 9, 37, 28, 20, 43, 35, 32, 12};
 
-        System.out.println(sort(talArr));
+        // System.out.println(sort(talArr));
     }
 
     public static String sort(int[] array) {
         // Start tid for algoritmen starter
-        long algoStart = System.nanoTime();
+        // long algoStart = System.nanoTime();
 
         String result = "["; // Den sorteret array
-        Long algoTime; // Til at få den totale tid
+        // Long algoTime; // Til at få den totale tid
         int index = 1; // Det index vi kigger på
 
         while (index != array.length) {
@@ -39,8 +39,8 @@ public class InsertonSort {
 
         }
         // Start tid for algoritmen slutter
-        long algoEnd = System.nanoTime();
-        algoTime = algoEnd - algoStart; // Udregn tiden
+        // long algoEnd = System.nanoTime();
+        // algoTime = algoEnd - algoStart; // Udregn tiden
 
         // Lav result stringen med arrayen
         for (int i = 0; i < array.length; i++) {
