@@ -7,14 +7,15 @@ public class testAlgo {
     public static void main(String[] args) {
         // int lengthOfArray     = Integer.parseInt(args[0]);
         // int numberOfArrays  = Integer.parseInt(args[1]);
-        int[] arrLengths = {10, 100, 1000, 10000, 100000};
+        int[] arrLengths = {100000};
+        // 10, 100, 1000, 10000, 100000
 
         myAlgo = new InsertonSort();
 
         System.out.println("\n");
 
         for (int j = 0; j < arrLengths.length; j++) {
-            for (int i = 0; i < 50; i++) {
+            for (int i = 0; i < 51; i++) {
                 int[] newArr = createArray(arrLengths[j]);
                 long tested = test(newArr);
                 // System.out.println("\nArray " + (i + 1) + ": " + tested + " ns");
