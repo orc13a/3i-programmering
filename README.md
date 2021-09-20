@@ -1,0 +1,1 @@
+[Link til repo](https://github.com/orc13a/LinkList-Gruppeovelser-21_2)
