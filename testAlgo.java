@@ -7,7 +7,7 @@ public class testAlgo {
     public static void main(String[] args) {
         // int lengthOfArray     = Integer.parseInt(args[0]);
         // int numberOfArrays  = Integer.parseInt(args[1]);
-        int[] arrLengths = {100000};
+        int[] arrLengths = {10, 100, 1000};
         // 10, 100, 1000, 10000, 100000
 
         myAlgo = new InsertonSort();
