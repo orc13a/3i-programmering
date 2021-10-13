@@ -1,5 +1,8 @@
 boolean showSmallWork = false;
 boolean showBinarytree = false;
+int ranInt = int(random(50));
+
+BinaryTree bt;
 
 void setup() {
   size(500, 500);
@@ -9,6 +12,8 @@ void setup() {
   
   rectMode(CENTER);
   textAlign(CENTER);
+  
+  bt = new BinaryTree();
   
   fill(0);
 }
@@ -25,6 +30,8 @@ void draw() {
   }
   
   if (showSmallWork) {
+    fill(0);
+    
     text("#1", 50, (width/4) - 25);
     smallOne(5);
     
@@ -36,7 +43,9 @@ void draw() {
   }
   
   if (showBinarytree) {
-  
+    fill(0);
+    
+    bt.tegnGren(width/2, 25, 100, 0);
   }
 }
 
