@@ -1,6 +1,7 @@
 boolean showSmallWork = false;
 boolean showBinarytree = false;
 int ranInt = int(random(50));
+boolean xx = true;
 
 BinaryTree bt;
 
@@ -45,7 +46,9 @@ void draw() {
   if (showBinarytree) {
     fill(0);
     
-    bt.tegnGren(width/2, 25, 100, 0);
+    line(width/2, 10, width/2, 75);
+    bt.tegnGren(new PVector(width/2, 75), new PVector(0, 75), PI/8);
+    bt.tegnGren(new PVector(width/2, 75), new PVector(0, 75), -PI/8);
   }
 }
 
@@ -56,8 +59,12 @@ void draw() {
 void smallOne(int n) {
   if (n > 0) {
     // print(n, " ");
-    text(n + " ", (50 * n), width/4); // ##### Skal printe omvendt!!!
+    // text(n + " ", (50 * n), width/4); // ##### Skal printe omvendt!!!
+    text("Udskrives i consolen.", 130, width/4);
+    println(n);
     smallOne(n - 1);
+  } else {
+    println('-');
   }
 }
 
